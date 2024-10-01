@@ -1,5 +1,5 @@
 body {
- color:black;
+  color: black;
   font-family: 'Courier New', Courier, monospace;
   font-size: 20px;
   margin: 0;
@@ -11,41 +11,90 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw; 
-  height: 100vh; 
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
   z-index: -1;
- }
+}
 
 
- header {
+header {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
-  align-items: center; 
-  height: 100vh; 
-  }
+  align-items: center;
+  height: 100vh;
+}
 
-  
+
 h1 {
   font-size: 3rem;
-  margin: 0; 
+  margin: 0;
   font-family: 'Courier New', Courier, monospace;
 
 }
 
 nav {
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
 nav a {
   text-decoration: none;
-  color: black; 
+  color: black;
   margin: 0 10px;
 }
 
 nav a:hover {
-  text-decoration: none;
-  color:darkorchid; 
+  color: darkorchid;
+}
+
+
+.red-gradient {
+  background: linear-gradient(to right, #a80de6, #2d2ae6);
+}
+
+.blue-gradient { 
+  background: linear-gradient(to right, #a2d2ff, #cdb4db);
+}
+
+
+.gradient-text {
+  font-weight: bold;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.font-size-medium {
+  font-size: 3rem;
+
+}
+
+.font-size-larger {
+  font-size: 5rem;
+}
+
+
+.floating-text-animation {
+  animation: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+
 }
 
